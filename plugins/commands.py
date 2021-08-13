@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
-        ]
-        ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            InlineKeyboardButton('💫ＪƝ⟆ ᗷ〇Ƭ⟆💫', url='https://t.me/jns_bots'),
+                    InlineKeyboardButton('🤠MoViEs🤠', url='https://t.me/FCfilmcornerfc')
+                ]
+                ]
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆ 💫</a>\n\nLanguage : <code>Python3 🥀</code>\n\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio 🧾</a>\n\nMovieS : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER™🌃</a>\n\nDiscussion : <a href='https://t.me/Jns_fc_bots'>JNS BOTS🍻</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
