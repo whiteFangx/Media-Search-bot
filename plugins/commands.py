@@ -196,4 +196,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('🤠MoViEs🤠', url='https://t.me/FCfilmcornerfc')
         ]
         ]
-     await message.reply(text="<b>Developer : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆ 💫</a>\n\nLanguage : <code>Python3 🥀</code>\n\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio 🧾</a>\n\nMovieS : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER™🌃</a>\n\nDiscussion : <a href='https://t.me/Jns_fc_bots'>JNS BOTS🍻</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+     await message.reply(text="""<b>Developer : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆ 💫</a>\n\nLanguage : <code>Python3 🥀</code>\n\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio 🧾</a>\n\nMovieS : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER™🌃</a>\n\nDiscussion : <a href='https://t.me/Jns_fc_bots'>JNS BOTS🍻</a> </b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
