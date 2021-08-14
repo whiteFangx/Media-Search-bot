@@ -90,7 +90,7 @@ def get_reply_markup(query):
             InlineKeyboardButton('💤Dev💤', url='https://t.me/jintons')
         ],
         [
-            InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/JNS_MOVIE_BOT?start' )
+            InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/JNS_MOVIE_BOT' )
         ]
         ]
     return InlineKeyboardMarkup(buttons)
