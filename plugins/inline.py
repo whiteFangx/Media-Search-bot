@@ -83,11 +83,14 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('More Bots', url='https://t.me/jns_bots')
+            InlineKeyboardButton('🔍Search again', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('More Bots🐾', url='https://t.me/jns_bots')
         ],
         [
             InlineKeyboardButton('💤Dev💤', url='https://t.me/jintons')
+        ],
+        [
+            InlineKeyboardButton("About", callback_data="about")
         ]
         ]
     return InlineKeyboardMarkup(buttons)
