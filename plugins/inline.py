@@ -83,14 +83,15 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('🔍Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('More Bots🐾', url='https://t.me/jns_bots')
+            InlineKeyboardButton('🔍Search again', switch_inline_query_current_chat=query)
+        ],[
+            InlineKeyboardButton('How to use me', url='https://t.me/cinee_update')
         ],
         [
             InlineKeyboardButton('💤Dev💤', url='https://t.me/jintons')
         ],
         [
-            InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/JNS_MOVIE_BOT' )
+            InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/icineeBOT' )
         ]
         ]
     return InlineKeyboardMarkup(buttons)
