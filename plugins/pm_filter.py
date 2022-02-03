@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('💫ＪƝ⟆ ᗷ〇Ƭ⟆💫', url='https://t.me/jns_bots'),
-                    InlineKeyboardButton('🤠MoViEs🤠', url='https://t.me/FCfilmcornerfc')
+                    InlineKeyboardButton('🤠updates🤠', url='https://t.me/cinee_update')
                 ]
                 ]
             await query.message.edit(text="<b>Developer : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆ 💫</a>\n\nLanguage : <code>Python3 🥀</code>\n\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio 🧾</a>\n\nMovieS : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER™🌃</a>\n\nDiscussion : <a href='https://t.me/Jns_fc_bots'>JNS BOTS🍻</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -298,7 +298,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('🐾More Bots', url='https://t.me/jns_bots'),
-                        InlineKeyboardButton('Discussion🐾', url='https://t.me/jns_fc_bots')
+                        InlineKeyboardButton('How to use me', url='https://t.me/cinee_update')
                     ]
                     ]
                 
@@ -330,7 +330,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('🐾More Bots', url='https://t.me/jns_bots'),
-                        InlineKeyboardButton('Discussion🐾', url='https://t.me/jns_fc_bots')
+                        InlineKeyboardButton('How to use me', url='https://t.me/cinee_update')
                     ]
                     ]
                 
