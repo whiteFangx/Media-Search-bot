@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🔍Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots🐾', url='https://t.me/jns_bots')
+                        InlineKeyboardButton('How to use me', url='https://t.me/cinee_update')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -99,8 +99,10 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("More Bots🐾", url="https://t.me/jns_bots")
+                        InlineKeyboardButton("🔍Search Here", switch_inline_query_current_chat='')
+                    ],
+                    [
+                        InlineKeyboardButton("How to use me", url="https://t.me/cinee_update")
                     ],
                     [
                         InlineKeyboardButton("🙈About🙈", callback_data="about")
@@ -109,7 +111,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton('💤Dev💤', url='https://t.me/jintons')
                     ],
                     [
-                        InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/JNS_MOVIE_BOT' )
+                        InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/icineeBOT' )
                     ]
                 ]
             )
@@ -199,14 +201,14 @@ async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('💫ＪƝ⟆ ᗷ〇Ƭ⟆💫', url='https://t.me/jns_bots'),
-            InlineKeyboardButton('🤠MoViEs🤠', url='https://t.me/FCfilmcornerfc')
+            InlineKeyboardButton('🤠Updates🤠', url='https://t.me/cinee_update')
         ],
         [
-            InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/JNS_MOVIE_BOT' )
+            InlineKeyboardButton("🥳Invite friends 🔫", url='https://telegram.me/share/url?url=https://t.me/icineebot' )
         ],
         [
             InlineKeyboardButton('Dev💤', url='https://t.me/jintons'),
-            InlineKeyboardButton('Discussion🐾', url='https://t.me/jns_fc_bots')
+            InlineKeyboardButton('Discussion🐾', url='https://t.me/cinee_update')
         ]
         ]
     await message.reply(text="""<b>Developer : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆ 💫</a>\n\nLanguage : <code>Python3 🥀</code>\n\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio 🧾</a>\n\nMovieS : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER™🌃</a>\n\nDiscussion : <a href='https://t.me/Jns_fc_bots'>JNS BOTS🍻</a> </b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
