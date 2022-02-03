@@ -83,8 +83,6 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('🔍Search again', switch_inline_query_current_chat=query)
-        ],[
             InlineKeyboardButton('How to use me', url='https://t.me/cinee_update')
         ],
         [
