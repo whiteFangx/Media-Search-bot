@@ -16,7 +16,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 # Admins, Channels & Users
 ADMINS = ['@ravi00893']
-CHANNELS = [-1001840839823]
+CHANNELS = [-1001339472860]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -24,7 +24,7 @@ AUTH_CHANNEL = -1001814578073
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 
 # MongoDB information
-DATABASE_URI = "mongodb+srv://cinee:cinee@cluster0.vidvag8.mongodb.net/?retryWrites=true&w=majority"
+DATABASE_URI = "mongodb+srv://cinee:cinee@cluster0.nr6ekfd.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = 'cinee'
 COLLECTION_NAME = 'channel_files'
 
@@ -36,7 +36,7 @@ Here you can search files in Inline mode as well as PM, Use the below buttons to
 START_MSG = environ.get('START_MSG', default_start_msg)
 
 FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "")
-OMDB_API_KEY = environ.get("OMDB_API_KEY", "")
+OMDB_API_KEY = "9b6cef92"
 if FILE_CAPTION.strip() == "":
     CUSTOM_FILE_CAPTION=None
 else:
