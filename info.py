@@ -24,7 +24,7 @@ AUTH_CHANNEL = -1001531025479
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 
 # MongoDB information
-DATABASE_URI = " mongodb+srv://jns4638:jns4638@cluster0.qyh3o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_URI = "mongodb+srv://jns4638:jns4638@cluster0.qyh3o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 DATABASE_NAME = 'cinee'
 COLLECTION_NAME = 'channel_files'
 
