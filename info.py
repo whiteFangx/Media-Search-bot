@@ -15,7 +15,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 # Admins, Channels & Users
-ADMINS = ['@ravi00893']
+ADMINS = ['@Hitesh0007']
 CHANNELS = [-1001538461400]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = []
@@ -36,7 +36,7 @@ Here you can search files in Inline mode as well as PM, Use the below buttons to
 START_MSG = environ.get('START_MSG', default_start_msg)
 
 FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "")
-OMDB_API_KEY = "9b6cef92"
+OMDB_API_KEY = "cca8a5e"
 if FILE_CAPTION.strip() == "":
     CUSTOM_FILE_CAPTION=None
 else:
