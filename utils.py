@@ -90,9 +90,9 @@ async def save_file(media):
         try:
             await file.commit()
         except DuplicateKeyError:
-            logger.warning(media.file_name + " is already saved in database")
+            logger.warning(f"{media.file_name} is already saved in database")
         else:
-            logger.info(media.file_name + " is saved in database")
+            logger.info(f"{media.file_name} is saved in database")
 
 
 async def get_search_results(query, file_type=None, max_results=10, offset=0):
@@ -152,14 +152,12 @@ async def get_filter_results(query):
     total_results = await Media.count_documents(filter)
     cursor = Media.find(filter)
     cursor.sort('$natural', -1)
-    files = await cursor.to_list(length=int(total_results))
-    return files
+    return await cursor.to_list(length=int(total_results))
 
 async def get_file_details(query):
     filter = {'file_id': query}
     cursor = Media.find(filter)
-    filedetails = await cursor.to_list(length=1)
-    return filedetails
+    return await cursor.to_list(length=1)
 
 
 async def is_subscribed(bot, query):
@@ -170,7 +168,7 @@ async def is_subscribed(bot, query):
     except Exception as e:
         logger.exception(e)
     else:
-        if not user.status == 'kicked':
+        if user.status != 'kicked':
             return True
 
     return False
@@ -213,7 +211,6 @@ async def get_poster(movie):
                 await get_all(a.get("Search"))
         except Exception as e:
             logger.exception(e)
-            pass
     return poster
 
 
